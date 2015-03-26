@@ -16,6 +16,9 @@ GEM
     capistrano-rvm (0.1.2)
       capistrano (~> 3.0)
       sshkit (~> 1.2)
+    capistrano3-foreman (0.2.5)
+      capistrano (~> 3.0)
+      sshkit (>= 1.2.0)
     celluloid (0.16.0)
       timers (~> 4.0.0)
     celluloid-io (0.16.2)
@@ -37,7 +40,6 @@ GEM
     net-ssh (2.9.2)
     newrelic_rpm (3.11.1.284)
     nio4r (1.1.0)
-    rack (1.6.0)
     rake (10.4.2)
     reel (0.5.0)
       celluloid (>= 0.15.1)
@@ -45,9 +47,6 @@ GEM
       http (>= 0.6.0.pre)
       http_parser.rb (>= 0.6.0)
       websocket_parser (>= 0.1.6)
-    reel-rack (0.2.1)
-      rack (>= 1.4.0)
-      reel (>= 0.5.0)
     sshkit (1.7.1)
       colorize (>= 0.7.0)
       net-scp (>= 1.1.2)
@@ -66,6 +65,5 @@ DEPENDENCIES
   capistrano
   capistrano-bundler
   capistrano-rvm
+  capistrano3-foreman
   newrelic_rpm
-  reel-rack
-
