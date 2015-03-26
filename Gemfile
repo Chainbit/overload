@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'angelo'
 gem 'newrelic_rpm'
 gem 'dotenv'
+gem 'foreman'
 
 group :development do
   gem 'capistrano'
