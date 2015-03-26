@@ -9,3 +9,4 @@ group :development do
   gem 'capistrano-rvm'
   gem 'capistrano-bundler'
 end
+

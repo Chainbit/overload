@@ -11,3 +11,4 @@
 [03/26/15 14:10:33 +0300 ch.local (38743)] INFO : Installing deferred Rack instrumentation
 [03/26/15 14:10:33 +0300 ch.local (38743)] INFO : Installing Rack::Builder middleware instrumentation
 [03/26/15 14:10:33 +0300 ch.local (38743)] INFO : Finished instrumentation
+

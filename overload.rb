@@ -19,3 +19,4 @@ class Overload < Angelo::Base
     websockets[:bar].each {|ws| ws.write params[:bar]}
   end
 end
+
