@@ -4,7 +4,6 @@ lock '3.4.0'
 set :application, 'overload'
 set :branch, 'master'
 
-gihub_token = '8563fd429758e60f7e6219a3a6e2e834c2bd19bc'
 
 set :repo_url, "https://#{gihub_token}@github.com/chainbit/overload.git"
 set :rvm_ruby_version, 'rbx-head@overload'
