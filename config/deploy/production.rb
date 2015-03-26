@@ -7,8 +7,8 @@
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
 # server 'db.example.com', user: 'deploy', roles: %w{db}
 
-server '52.16.164.230',
-       user: 'ubuntu',
+server ENV['PRODUCTION_HOST'],
+       user: ENV['PRODUCTION_USER'],
        roles: %w(app web db)
 
 set :branch, ENV['BRANCH_NAME'] || 'master'

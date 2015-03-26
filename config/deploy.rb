@@ -1,12 +1,16 @@
+require 'dotenv'
+Dotenv.load
+
 # config valid only for current version of Capistrano
 lock '3.4.0'
 
 set :application, 'overload'
 set :branch, 'master'
 
+gihub_token = ENV['GIT_TOKEN']
 
 set :repo_url, "https://#{gihub_token}@github.com/chainbit/overload.git"
-set :rvm_ruby_version, 'rbx-head@overload'
+set :rvm_ruby_version, 'rbx-head@overload --create'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
