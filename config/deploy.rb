@@ -7,10 +7,8 @@ lock '3.4.0'
 set :application, 'overload'
 set :branch, 'master'
 
-gihub_token = ENV['GIT_TOKEN']
-
-set :repo_url, "https://#{gihub_token}@github.com/chainbit/overload.git"
-set :rvm_ruby_version, 'rbx-head@overload --create'
+set :repo_url, "https://github.com/chainbit/overload.git"
+set :rvm_ruby_version, 'rbx-head@overload'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
@@ -31,7 +29,7 @@ set :rvm_ruby_version, 'rbx-head@overload --create'
 # set :pty, true
 
 # Default value for :linked_files is []
-set :linked_files, fetch(:linked_files, []).push('.env')
+set :linked_files, fetch(:linked_files, []).push('env')
 
 # Default value for linked_dirs is []
 # set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
